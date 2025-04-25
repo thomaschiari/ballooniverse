@@ -41,7 +41,7 @@ class BallooniverseChain:
                 model="deepseek-reasoner",
                 api_key=api_key or os.getenv("DEEPSEEK_API_KEY"),
                 temperature=0,
-                max_tokens=32768
+                max_tokens=None
             )
         
         self.system_prompt = """You are a helpful **AI Coding Assistant**, specializing in building interactive experiences using **JavaScript**, **HTML**, and **CSS**.
